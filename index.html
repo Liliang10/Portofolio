@@ -13,9 +13,8 @@
       animation: gradientBG 15s ease infinite;
       color: white;
       font-family: monospace;
-      scroll-behavior: smooth; /* ✅ Scroll halus */
+      scroll-behavior: smooth;
     }
-
     @keyframes gradientBG {
       0% { background-position: 0% 50%; }
       50% { background-position: 100% 50%; }
@@ -27,12 +26,9 @@
 
 <!-- Navbar -->
 <nav class="bg-gray-800/70 text-white py-4 shadow-md sticky top-0 z-50 backdrop-blur-md">
-  <div class="container mx-auto flex justify-between items-center px-8">
-    <!-- Logo -->
-    <h1 class="text-2xl font-bold">Portofolio</h1>
-    
-    <!-- Menu -->
-    <ul class="flex space-x-6 font-semibold">
+  <div class="container mx-auto flex justify-between items-center px-4 sm:px-6 lg:px-8">
+    <h1 class="text-xl sm:text-2xl font-bold">Portofolio</h1>
+    <ul class="hidden md:flex space-x-6 font-semibold">
       <li><a href="#about" class="hover:text-purple-400">Tentang Saya</a></li>
       <li><a href="#skills" class="hover:text-purple-400">Keahlian</a></li>
       <li><a href="#projects" class="hover:text-purple-400">Proyek</a></li>
@@ -41,164 +37,149 @@
   </div>
 </nav>
 
-  <!-- Tentang Saya -->
-  <section id="about" class="p-10 max-w-5xl bg-gray-900/60 mx-auto rounded-2xl shadow-lg backdrop-blur-md mt-8 mb-8">
-    <h2 class="text-2xl font-bold text-green-400 mb-4 text-center">Tentang Saya</h2>
-    <p class="text-gray-300 leading-relaxed">
-      Haloo, Saya Khresna Sinathrya Ramadhan Saya seorang siswa SMK <span class="text-green-400">Fullstack Developer</span> dengan passion membangun
-      aplikasi web modern. Saya senang bekerja di sisi <span class="text-blue-400">Frontend</span> dan masih belajar untuk <span class="text-yellow-400">
-      Backend</span>, menggunakan teknologi terbaru untuk menciptakan solusi yang bermanfaat. Saya juga bersemangat untuk mencoba hal baru.
-    </p>
-  </section>
+<!-- Tentang Saya -->
+<section id="about" class="p-6 sm:p-10 max-w-5xl bg-gray-900/60 mx-auto rounded-2xl shadow-lg backdrop-blur-md mt-6 sm:mt-8 mb-8">
+  <h2 class="text-2xl font-bold text-green-400 mb-4 text-center">Tentang Saya</h2>
+  <p class="text-gray-300 leading-relaxed text-center md:text-left">
+    Haloo, Saya <span class="text-green-400">Khresna Sinathrya Ramadhan</span>, seorang siswa SMK
+    <span class="text-green-400">Fullstack Developer</span> dengan passion membangun aplikasi web modern.
+    Saya senang bekerja di sisi <span class="text-blue-400">Frontend</span> dan masih belajar untuk
+    <span class="text-yellow-400">Backend</span>, menggunakan teknologi terbaru untuk menciptakan solusi yang bermanfaat.
+  </p>
+</section>
 
-  <!-- Keahlian -->
-  <section id="skills" class="p-10 max-w-5xl mx-auto bg-gray-900/60 rounded-2xl shadow-lg backdrop-blur-md">
-    <h2 class="text-2xl font-bold text-green-400 mb-4 text-center">Keahlian</h2>
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-      <div class="bg-gray-800 p-6 rounded-2xl shadow-md">
-        <h3 class="text-xl font-semibold text-blue-400 mb-2">Web Development</h3>
-        <ul class="list-disc list-inside text-gray-300">
-          <li>HTML, CSS</li>
-          <li>Tailwind CSS</li>
-          <li>JavaScript</li>
-        </ul>
-      </div>
-      <div class="bg-gray-800 p-6 rounded-2xl shadow-md">
-        <h3 class="text-xl font-semibold text-yellow-400 mb-2">Other</h3>
-        <ul class="list-disc list-inside text-gray-300">
-          <li>Flutter</li>
-          <li>GitHub</li>
-          <li>Dart</li>
-        </ul>
-      </div>
+<!-- Keahlian -->
+<section id="skills" class="p-6 sm:p-10 max-w-5xl mx-auto bg-gray-900/60 rounded-2xl shadow-lg backdrop-blur-md">
+  <h2 class="text-2xl font-bold text-green-400 mb-4 text-center">Keahlian</h2>
+  <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+    <div class="bg-gray-800 p-6 rounded-2xl shadow-md text-center sm:text-left">
+      <h3 class="text-xl font-semibold text-blue-400 mb-2">Web Development</h3>
+      <ul class="list-disc list-inside text-gray-300 text-sm sm:text-base">
+        <li>HTML, CSS</li>
+        <li>Tailwind CSS</li>
+        <li>JavaScript</li>
+      </ul>
     </div>
-  </section>
-
-  <!-- Proyek -->
-  <section id="projects" class="p-10 max-w-5xl mx-auto bg-gray-900/60 rounded-2xl shadow-lg backdrop-blur-md mt-10">
-    <h2 class="text-2xl font-bold text-green-400 mb-6 text-center">Proyek Saya</h2>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-
-      <!-- Proyek 1 -->
-      <a href="https://github.com/Liliang10/WhatsApp-App-Template"
-         class="bg-gray-800 rounded-2xl p-6 shadow-md hover:scale-105 hover:bg-gray-700 transition block">
-        <!-- Tambah Gambar -->
-        <img src="Whatapp.png" alt="WhatsApp Tiruan"
-             class="w-full h-40 object-cover rounded-lg mb-4">
-        <h3 class="text-lg font-semibold mb-2">WhatsApp Tiruan</h3>
-        <p class="text-gray-400 text-sm">Membuat Aplikasi seperti WhatsApp beserta beberapa fiturnya</p>
-      </a>
-
-      <!-- Proyek 2 -->
-      <a href="https://www.figma.com/design/BjbvZHy2Wdo7FhHGA63TF5/My-Book-Library?node-id=1-2&t=Ctn8KMfHSS67S0Gz-1"
-        class="bg-gray-800 rounded-2xl p-6 shadow-md hover:scale-105 hover:bg-gray-700 transition block">
-        <img src="Home.png" alt="My Book Library"
-             class="w-full h-40 object-cover rounded-lg mb-4">
-        <h3 class="text-lg font-semibold mb-2">My Book Library</h3>
-        <p class="text-gray-400 text-sm">Slicing design dari Figma untuk aplikasi peminjaman buku di perpustakaan secara online</p>
-      </a>
-
-      <!-- Proyek 3 -->
-      <a href="https://liliang10.github.io/Portofolio/"
-        class="bg-gray-800 rounded-2xl p-6 shadow-md hover:scale-105 hover:bg-gray-700 transition block">
-        <img src="Portofolio.png" alt="Portofolio Pribadi"
-             class="w-full h-40 object-cover rounded-lg mb-4">
-        <h3 class="text-lg font-semibold mb-2">Portofolio Pribadi</h3>
-        <p class="text-gray-400 text-sm">Website Portofolio yang memiliki desain responsif</p>
-      </a>
-
+    <div class="bg-gray-800 p-6 rounded-2xl shadow-md text-center sm:text-left">
+      <h3 class="text-xl font-semibold text-yellow-400 mb-2">Other</h3>
+      <ul class="list-disc list-inside text-gray-300 text-sm sm:text-base">
+        <li>Flutter</li>
+        <li>GitHub</li>
+        <li>Dart</li>
+      </ul>
     </div>
-  </section>
+  </div>
+</section>
 
+<!-- Proyek -->
+<section id="projects" class="p-6 sm:p-10 max-w-6xl mx-auto bg-gray-900/60 rounded-2xl shadow-lg backdrop-blur-md mt-10">
+  <h2 class="text-2xl font-bold text-green-400 mb-6 text-center">Proyek Saya</h2>
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+    <a href="https://github.com/Liliang10/WhatsApp-App-Template"
+       class="bg-gray-800 rounded-2xl p-6 shadow-md hover:scale-105 hover:bg-gray-700 transition block">
+      <img src="Whatapp.png" alt="WhatsApp Tiruan" class="w-full h-40 object-cover rounded-lg mb-4">
+      <h3 class="text-lg font-semibold mb-2">WhatsApp Tiruan</h3>
+      <p class="text-gray-400 text-sm">Membuat aplikasi seperti WhatsApp beserta beberapa fiturnya</p>
+    </a>
+    <a href="https://www.figma.com/design/BjbvZHy2Wdo7FhHGA63TF5/My-Book-Library"
+       class="bg-gray-800 rounded-2xl p-6 shadow-md hover:scale-105 hover:bg-gray-700 transition block">
+      <img src="Home.png" alt="My Book Library" class="w-full h-40 object-cover rounded-lg mb-4">
+      <h3 class="text-lg font-semibold mb-2">My Book Library</h3>
+      <p class="text-gray-400 text-sm">Slicing design dari Figma untuk aplikasi peminjaman buku online</p>
+    </a>
+    <a href="https://github.com/Liliang10/Portofolio"
+       class="bg-gray-800 rounded-2xl p-6 shadow-md hover:scale-105 hover:bg-gray-700 transition block">
+      <img src="Portofolio.png" alt="Portofolio Pribadi" class="w-full h-40 object-cover rounded-lg mb-4">
+      <h3 class="text-lg font-semibold mb-2">Portofolio Pribadi</h3>
+      <p class="text-gray-400 text-sm">Website Portofolio dengan desain responsif</p>
+    </a>
+  </div>
+</section>
 
-  <!-- Hubungi Saya -->
-  <section id="contact" class="p-10 max-w-5xl mx-auto bg-gray-900/60 rounded-2xl shadow-lg backdrop-blur-md mt-10">
-    <h2 class="text-2xl font-bold text-green-400 mb-8 text-center">Hubungi Saya</h2>
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 bg-gray-800 p-8 rounded-2xl shadow-lg">
+<!-- Hubungi Saya -->
+<section id="contact" class="p-6 sm:p-10 max-w-6xl mx-auto bg-gray-900/60 rounded-2xl shadow-lg backdrop-blur-md mt-10">
+  <h2 class="text-2xl font-bold text-green-400 mb-8 text-center">Hubungi Saya</h2>
+  <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 bg-gray-800 p-6 sm:p-8 rounded-2xl shadow-lg">
 
-      <!-- Info Kontak -->
-      <div class="flex flex-col gap-8 text-gray-200 justify-center">
-
-        <!-- Email -->
-        <div class="flex items-center gap-4">
-          <div class="bg-purple-700 p-4 rounded-full">
-            <!-- Ikon Email (amplop) -->
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
-                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-            </svg>
-          </div>
-          <div>
-            <h3 class="font-semibold text-lg">Email</h3>
-            <p class="text-xl">khresnas.r@gmail.com</p>
-          </div>
+    <!-- Info Kontak -->
+    <div class="flex flex-col gap-6 text-gray-200 justify-center text-center sm:text-left">
+      <!-- Email -->
+      <div class="flex items-center gap-4 justify-center sm:justify-start">
+        <div class="bg-purple-700 p-3 sm:p-4 rounded-full">
+          <!-- Ikon Email -->
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 sm:w-8 sm:h-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+          </svg>
         </div>
-
-        <!-- Telepon -->
-        <div class="flex items-center gap-4">
-          <div class="bg-purple-700 p-4 rounded-full">
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h1.28a1 1 0 01.96.73l1.12 4.23a1 1 0 01-.27.95l-1.79 1.79a16 16 0 006.36 6.36l1.79-1.79a1 1 0 01.95-.27l4.23 1.12a1 1 0 01.73.96V19a2 2 0 01-2 2h-1C9.82 21 3 14.18 3 6V5z" />
-            </svg>
-          </div>
-          <div>
-            <h3 class="font-semibold text-lg">Telepon</h3>
-            <p class="text-xl">+62 812 3094 4410</p>
-          </div>
+        <div>
+          <h3 class="font-semibold text-lg">Email</h3>
+          <p class="text-base sm:text-xl">khresnas.r@gmail.com</p>
         </div>
-
-        <!-- Lokasi -->
-        <div class="flex items-center gap-4">
-          <div class="bg-purple-700 p-4 rounded-full">
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 11c1.104 0 2-.896 2-2s-.896-2-2-2-2 .896-2 2 .896 2 2 2zM12 22s8-4.5 8-11c0-4.418-3.582-8-8-8s-8 3.582-8 8c0 6.5 8 11 8 11z"/>
-            </svg>
-          </div>
-          <div>
-            <h3 class="font-semibold text-lg">Lokasi</h3>
-            <p class="text-xl">Jl. Kalpataru C13/20, Bedali</p>
-          </div>
-        </div>
-
       </div>
 
-      <!-- Form Hubungi -->
-      <form id="contactForm" class="flex flex-col gap-4">
-        <input type="text" name="name" placeholder="Nama Anda"
-               class="p-3 rounded bg-gray-700 border border-gray-600 text-white focus:outline-none focus:ring-2 focus:ring-purple-500" required>
-        <input type="email" name="email" placeholder="Email Anda"
-               class="p-3 rounded bg-gray-700 border border-gray-600 text-white focus:outline-none focus:ring-2 focus:ring-purple-500" required>
-        <textarea name="message" placeholder="Pesan Anda" rows="4"
-                  class="p-3 rounded bg-gray-700 border border-gray-600 text-white focus:outline-none focus:ring-2 focus:ring-purple-500" required></textarea>
-        <button type="submit"
-                class="bg-gradient-to-r from-purple-600 to-pink-500 hover:opacity-90 text-white font-semibold py-3 rounded">
-          Kirim Pesan
-        </button>
-      </form>
-    </div>
-  </section>
+      <!-- Telepon -->
+      <div class="flex items-center gap-4 justify-center sm:justify-start">
+        <div class="bg-purple-700 p-3 sm:p-4 rounded-full">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 sm:w-8 sm:h-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h1.28a1 1 0 01.96.73l1.12 4.23a1 1 0 01-.27.95l-1.79 1.79a16 16 0 006.36 6.36l1.79-1.79a1 1 0 01.95-.27l4.23 1.12a1 1 0 01.73.96V19a2 2 0 01-2 2h-1C9.82 21 3 14.18 3 6V5z" />
+          </svg>
+        </div>
+        <div>
+          <h3 class="font-semibold text-lg">Telepon</h3>
+          <p class="text-base sm:text-xl">+62 812 3094 4410</p>
+        </div>
+      </div>
 
-  <!-- Footer -->
-  <footer class="bg-gray-900/60 border-t border-gray-700 p-6 text-center backdrop-blur-md mt-10">
-    <div class="flex justify-center gap-6 mb-2 text-xl">
-      <a href="https://wa.me/6281230944410" target="_blank" class="hover:text-green-400">WhatsApp</a>
-      <a href="https://github.com/Liliang10" target="_blank" class="hover:text-green-400">GitHub</a>
-      <a href="https://instagram.com/nathryaaa" target="_blank" class="hover:text-green-400">Instagram</a>
+      <!-- Lokasi -->
+      <div class="flex items-center gap-4 justify-center sm:justify-start">
+        <div class="bg-purple-700 p-3 sm:p-4 rounded-full">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 sm:w-8 sm:h-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 11c1.104 0 2-.896 2-2s-.896-2-2-2-2 .896-2 2 .896 2 2 2zM12 22s8-4.5 8-11c0-4.418-3.582-8-8-8s-8 3.582-8 8c0 6.5 8 11 8 11z"/>
+          </svg>
+        </div>
+        <div>
+          <h3 class="font-semibold text-lg">Lokasi</h3>
+          <p class="text-base sm:text-xl">Jl. Kalpataru C13/20, Bedali</p>
+        </div>
+      </div>
     </div>
-    <p class="text-gray-300 text-sm">© 2025 Fullstack Dev Portfolio</p>
-  </footer>
 
-  <!-- JavaScript untuk form -->
-  <script>
-    document.getElementById("contactForm").addEventListener("submit", function (e) {
-      e.preventDefault();
-      const name = e.target.name.value;
-      const email = e.target.email.value;
-      const message = e.target.message.value;
-      alert(`Pesan terkirim!\nNama: ${name}\nEmail: ${email}\nPesan: ${message}`);
-      e.target.reset();
-    });
-  </script>
+    <!-- Form Hubungi -->
+    <form id="contactForm" class="flex flex-col gap-4">
+      <input type="text" name="name" placeholder="Nama Anda"
+             class="p-3 rounded bg-gray-700 border border-gray-600 text-white focus:outline-none focus:ring-2 focus:ring-purple-500" required>
+      <input type="email" name="email" placeholder="Email Anda"
+             class="p-3 rounded bg-gray-700 border border-gray-600 text-white focus:outline-none focus:ring-2 focus:ring-purple-500" required>
+      <textarea name="message" placeholder="Pesan Anda" rows="4"
+                class="p-3 rounded bg-gray-700 border border-gray-600 text-white focus:outline-none focus:ring-2 focus:ring-purple-500" required></textarea>
+      <button type="submit"
+              class="bg-gradient-to-r from-purple-600 to-pink-500 hover:opacity-90 text-white font-semibold py-3 rounded">
+        Kirim Pesan
+      </button>
+    </form>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-gray-900/60 border-t border-gray-700 p-6 text-center backdrop-blur-md mt-10">
+  <div class="flex flex-wrap justify-center gap-6 mb-2 text-lg sm:text-xl">
+    <a href="https://wa.me/6281230944410" target="_blank" class="hover:text-green-400">WhatsApp</a>
+    <a href="https://github.com/Liliang10" target="_blank" class="hover:text-green-400">GitHub</a>
+    <a href="https://instagram.com/nathryaaa" target="_blank" class="hover:text-green-400">Instagram</a>
+  </div>
+  <p class="text-gray-300 text-xs sm:text-sm">© 2025 Fullstack Dev Portfolio</p>
+</footer>
+
+<!-- JS Form -->
+<script>
+  document.getElementById("contactForm").addEventListener("submit", function (e) {
+    e.preventDefault();
+    const name = e.target.name.value;
+    const email = e.target.email.value;
+    const message = e.target.message.value;
+    alert(`Pesan terkirim!\nNama: ${name}\nEmail: ${email}\nPesan: ${message}`);
+    e.target.reset();
+  });
+</script>
 </body>
 </html>
-
